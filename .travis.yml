@@ -1,12 +1,10 @@
 # Most explicit routing to GCE Precise
 sudo: required
-dist: precise
-group: edge
+dist: trusty
 
-language: c
+language: generic
 
 before_install: #checking out packages availability
-  - sudo apt-get update
-  - sudo apt-get -y install gdb
+  - sudo apt-get install lxc
 
 script: echo hola
